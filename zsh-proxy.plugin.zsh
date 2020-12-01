@@ -296,13 +296,13 @@ config_proxy() {
 proxy() {
 	echo "1" >"${HOME}/.zsh-proxy/status"
 	__enable_proxy
-	__check_ip
+	# __check_ip
 }
 
 noproxy() {
 	echo "0" >"${HOME}/.zsh-proxy/status"
 	__disable_proxy
-	__check_ip
+	# __check_ip
 }
 
 myip() {
